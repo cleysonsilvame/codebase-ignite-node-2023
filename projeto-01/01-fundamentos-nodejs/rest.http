@@ -1,0 +1,26 @@
+@url = http://localhost:3333
+
+
+GET {{url}}/users
+?search=@email.com
+Content-Type: application/json
+
+###
+
+POST {{url}}/users HTTP/1.1
+Content-Type: application/json
+
+{
+  "name": "Cleyson Silva",
+  "email": "cleyson@email.com"
+}
+
+###
+
+POST {{url}}/users HTTP/1.1
+Content-Type: application/json
+
+{
+  "name": "John Doe",
+  "email": "johndoe@email.com"
+}
